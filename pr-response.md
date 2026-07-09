@@ -18,8 +18,10 @@ the film is added to the watchlist.
 attempts to add the same film to a watchlist more than one time.
 
 ## Comment 3 — Missing test
-**What I did:**
-**How I verified:**
+**What I did:** I added a `test_add_to_watchlist_nonexistent_film_raises` test to `tests/test_watchlist.py`. This test
+validates that when adding a non-existent film to a watchlist a `FilmNotFoundError` exception is raised.
+
+**How I verified:** I ran the test with `pytest tests/test_watchlist.py -v` and confirmed it passed.
 
 ## Comment 4 — Default visibility
 **My position:**
