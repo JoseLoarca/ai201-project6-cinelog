@@ -24,9 +24,17 @@ validates that when adding a non-existent film to a watchlist a `FilmNotFoundErr
 **How I verified:** I ran the test with `pytest tests/test_watchlist.py -v` and confirmed it passed.
 
 ## Comment 4 — Default visibility
-**My position:**
-**Reasoning:**
-**Tradeoff acknowledged:**
+**My position:** I believe watchlists should default to `public=True`. 
+
+**Reasoning:** **CineLog** is described as a community film-tracking app. A community is built around people with shared 
+interests who interact with one another. Because of this, **_watchlists should be public by default_**, as they encourage 
+users to share their film interests, discover new movies, and engage with others. While some users may only want to use 
+CineLog for its film tracking features, the app’s primary focus on community suggests that most users will benefit 
+from public watchlists.
+
+**Tradeoff acknowledged:** Currently, the app does not support changing the visibility of watchlists. Users who are 
+interested in using CineLog only for its film tracking features might lose interest in the app once they find out that 
+watchlists are public by default and can't be updated. 
 
 ## Comment 5 — Sort order
 **My position:**
