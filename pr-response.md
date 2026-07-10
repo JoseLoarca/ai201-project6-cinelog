@@ -92,8 +92,22 @@ bbe206c (origin/main, origin/HEAD) Merge pull request #2 from ascherj/chore/add-
 <img src="/images/git.png" alt="git log output"/>
 
 ## PR Description
-This feature allows users to keep track of movies they want to watch. A film can only exist once in the user's watchlist.
+Added watchlist feature to the app. This feature allows users to keep track of movies they want to watch.
+
+Functions related to watchlists:
+* `add_to_watchlist(user_id, film_id)`: allows a user to add a film to the watchlist. A film can only exist in the user
+watchlist once.
+* `remove_from_watchlist(user_id, film_id)`: allows a user to remove a film from the watchlist. 
+* `get_watchlist(user_id)`: allows a user to retrieve their watchlist.
 
 By default: watchlists are public and their records are sorted by date added (desc).
 
-To test this feature run `pytest tests/test_watchlist.py -v`
+To test this feature run `pytest tests/test_watchlist.py -v`. Tests included:
+* `test_add_to_watchlist_duplicate_raises`: a film can only exist in a watchlist once. Adding a duplicate record
+should raise `AlreadyInWatchlistError`.
+* `test_add_to_watchlist_nonexistent_film_raises`: a film must exist in the database in order to be added to the
+watchlist. Adding a nonexistent film should raise `FilmNotFoundError`.
+* `test_remove_from_watchlist_film_not_in_watchlist_raises`: a film can only be removed from a watchlist if it already
+exists in the watchlist. Removing a film from a watchlist that does not exist in the watchlist should raise `NotInWatchlistError`.
+
+All new functions and tests follow the project's naming convention.
