@@ -1,7 +1,11 @@
 # PR Response Doc — CineLog Watchlist Feature
 
 ## AI Usage
-<!-- Fill in at the end — how you used AI tools during this project -->
+I used Claude for stress-testing the design argument on the default sort order. I wrote my position and reasoning, and
+asked it identify any tradeoffs that I was not acknowledging. 
+
+It's response helped me identify a big tradeoff I was not considering: for certain apps/features, ordering records
+alphabetically allows for easier search. 
 
 ## Comment 1 — Rename
 **What I did:** Renamed `save_to_watchlist()` to `add_to_watchlist()` in order to follow the project's naming convention.
@@ -88,4 +92,8 @@ bbe206c (origin/main, origin/HEAD) Merge pull request #2 from ascherj/chore/add-
 <img src="/images/git.png" alt="git log output"/>
 
 ## PR Description
-<!-- Written at the end — feature overview, design decisions, manual testing steps -->
+This feature allows users to keep track of movies they want to watch. A film can only exist once in the user's watchlist.
+
+By default: watchlists are public and their records are sorted by date added (desc).
+
+To test this feature run `pytest tests/test_watchlist.py -v`
