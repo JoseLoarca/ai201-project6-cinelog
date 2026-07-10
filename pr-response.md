@@ -68,5 +68,24 @@ their preferred sort order (date vs title), and also allow users to change the s
 
 **How I verified no conflict remains:** I didn't have any other highlighted conflicts, I was also able to run `git rebase --continue`.
 
+## Milestone #4: `git log --oneline` output
+```terminaloutput
+41904be (HEAD -> feature/watchlist) docs: add rebase section to pr-response.md
+5c9cd10 docs: add sort order decisions section to pr-response.md
+9587078 docs: add default visibility decisions section to pr-response.md
+b9eeef4 docs: add test documentation section for nonexistent films in add_to_watchlist to pr-response.md
+7c9e2c0 test: add test for nonexistent film id in add_to_watchlist
+4d7cbca fix: add deduplication check on add_to_watchlist to prevent duplicate watchlist entries
+78a6b54 fix: rename save_to_watchlist to add_to_watchlist per naming convention
+08529b7 fix: update film retrieval method to use db.session.get in collection and watchlist services
+b344fae feat: add view watchlist and add film to watchlist endpoints
+bbe206c (origin/main, origin/HEAD) Merge pull request #2 from ascherj/chore/add-gitignore
+718a9a8 chore: add .gitignore for generated files
+07ca580 refactor: migrate film IDs from integer to UUID
+014ae54 feat: initial CineLog API with film collection feature
+```
+
+<img src="/images/git.png" alt="git log output"/>
+
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
