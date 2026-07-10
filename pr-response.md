@@ -37,9 +37,29 @@ interested in using CineLog only for its film tracking features might lose inter
 watchlists are public by default and can't be updated. 
 
 ## Comment 5 — Sort order
-**My position:**
-**Reasoning:**
-**Engagement with reviewer's point:**
+**My position:** Watchlists should default to date added (desc) order by default.
+
+**Reasoning:** We humans are interested in fresh, up-to-date content. When you open your gallery, you see the latest 
+pic first. I go back to my oldest pics occasionally, but I have zero interest in seeing older pics first. The same applies
+to messages, emails, playlists, etc. By sorting films by date added (desc) by default, we guarantee that users will 
+always be seeing the latest, most up-to-date content.
+
+Imagine the following scenario where the app sorts watchlists alphabetically: You added a movie that starts with the 
+letter 'R' to a watchlist that already contains more than 100 records. This movie is the most recent one you watched. 
+Two weeks later, you are talking about movies with your friends, and you want to remember the name of this movie. 
+You open the app and boom, you have to scroll through several records in order to find this movie. It takes you a while 
+to finally find it, and by the time you do it the conversation topic has already changed. Bummer.
+
+**Engagement with reviewer's point:** I agree that records in the watchlist should default to date added (desc) order
+by default. This sorting order guarantees that watchlists will have a linear, chronological order. Alphabetical order
+could potentially make watchlists look messy and confusing.
+
+One tradeoff I'd like to acknowledge: alphabetical order would make it easier to find a specific film by title. If I
+know I'm looking for 'Interstellar', for example, I have a better idea of where to scroll to (letter I). Ordering by date
+does not give you this: I know I watched Interstellar, but I don't remember when, so I'll have to scroll until I find it.
+
+In my opinion, the best long-term solution would be to: default order by date added (desc), let users configure
+their preferred sort order (date vs title), and also allow users to change the sort order when browsing a watchlist.
 
 ## Comment 6 — Rebase
 **What conflicted:**
