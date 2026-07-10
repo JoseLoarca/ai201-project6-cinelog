@@ -62,9 +62,11 @@ In my opinion, the best long-term solution would be to: default order by date ad
 their preferred sort order (date vs title), and also allow users to change the sort order when browsing a watchlist.
 
 ## Comment 6 — Rebase
-**What conflicted:**
-**How I resolved it:**
-**How I verified no conflict remains:**
+**What conflicted:** I only had conflicts with my `.gitignore` file.
+
+**How I resolved it:** Updated my `.gitignore` to the version I was using before rebasing.
+
+**How I verified no conflict remains:** I didn't have any other highlighted conflicts, I was also able to run `git rebase --continue`.
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
